@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portfólio de Enrique Artur Rodrigues Santos | TI, QA e desenvolvimento.">
+<title>Enrique Artur | TI · QA · Desenvolvimento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07090d;--panel:#0d1118;--panel2:#111722;--text:#eef2f7;--muted:#8d98a9;--line:#202a38;--purple:#9b8cff;--cyan:#52e0cf;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% 12%,#28204c55,transparent 30%),radial-gradient(circle at 10% 55%,#123d3950,transparent 28%),var(--bg);color:var(--text);font-family:Inter,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(92%,var(--max));margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:20;background:#07090dcc;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff0a}
+nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 1.15rem "Space Grotesk";letter-spacing:-.04em}.brand i{color:var(--purple);font-style:normal}.nav{display:flex;gap:26px;color:var(--muted);font-size:.88rem}.nav a:hover{color:var(--text)}.nav-cta{padding:8px 14px;border:1px solid var(--line);border-radius:999px;color:var(--text)}.hamb{display:none;background:none;border:0;color:white;font-size:1.5rem}
+.hero{min-height:100vh;display:grid;align-items:center;padding:130px 0 70px}.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:55px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--cyan);font-size:.78rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--cyan);border-radius:50%;box-shadow:0 0 18px var(--cyan)}
+h1{font:700 clamp(3.3rem,7.5vw,6.9rem)/.9 "Space Grotesk";letter-spacing:-.07em;margin:22px 0}.gradient{background:linear-gradient(100deg,#fff 20%,var(--purple),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:680px;color:var(--muted);font-size:1.08rem}.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}.btn{padding:11px 17px;border:1px solid var(--line);background:var(--panel);border-radius:12px;font-size:.88rem;font-weight:700;transition:.2s}.btn:hover{transform:translateY(-2px);border-color:#7167b8}.btn.primary{background:#f2f4f7;color:#080a0e;border-color:#f2f4f7}
+.code-card{background:linear-gradient(145deg,#111724,#0b0e14);border:1px solid var(--line);border-radius:22px;box-shadow:0 30px 80px #0008;overflow:hidden;transform:rotate(1deg)}.dots{display:flex;gap:6px;padding:14px;border-bottom:1px solid var(--line)}.dots b{width:8px;height:8px;border-radius:50%;background:#303847}.code{padding:22px;font:500 .83rem/1.9 ui-monospace,SFMono-Regular,monospace;color:#bfc7d4}.kw{color:#b7aaff}.fn{color:#62e4d0}.str{color:#e7ca8c}.cm{color:#657083}
+section{padding:110px 0 10px}.section-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:30px}.section-kicker{color:var(--purple);font:700 .76rem "Space Grotesk";letter-spacing:.13em;text-transform:uppercase}.title{font:700 clamp(2rem,4vw,3.3rem)/1 "Space Grotesk";letter-spacing:-.05em;margin:7px 0}.desc{color:var(--muted);max-width:620px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#0b0e14}.stat{padding:22px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{font:700 1.45rem "Space Grotesk";display:block}.stat span{color:var(--muted);font-size:.8rem}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:linear-gradient(145deg,#10151e,#0b0e14);border:1px solid var(--line);border-radius:22px;padding:28px}.panel h3{font:600 1.25rem "Space Grotesk";margin-top:0}.panel p{color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill{padding:20px;border:1px solid var(--line);border-radius:17px;background:#0c1017}.skill-top{display:flex;justify-content:space-between;gap:10px}.skill b{font-family:"Space Grotesk"}.skill small{color:var(--cyan)}.skill p{color:var(--muted);font-size:.83rem;margin-bottom:0}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{position:relative;min-height:310px;overflow:hidden}.project .num{color:var(--purple);font:700 .78rem ui-monospace}.project h3{font:700 1.7rem "Space Grotesk";margin:12px 0 8px}.project p{color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.tag{padding:5px 9px;border:1px solid var(--line);border-radius:999px;color:#c3cad5;font-size:.72rem}.project::after{content:"";position:absolute;width:230px;height:230px;border-radius:50%;right:-110px;bottom:-130px;background:#8d7cff14}
+.timeline{display:grid;gap:15px}.job{display:grid;grid-template-columns:150px 1fr;gap:25px;padding:22px 0;border-bottom:1px solid var(--line)}.job:last-child{border:0}.job time{color:var(--cyan);font:600 .78rem ui-monospace}.job h3{font:600 1.1rem "Space Grotesk";margin:0}.job p{color:var(--muted);margin:6px 0 0}
+.contact{padding:120px 0}.contact-box{position:relative;text-align:center;padding:65px 25px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,#111724,#0a0d13);overflow:hidden}.contact-box:before{content:"";position:absolute;width:280px;height:280px;left:50%;top:-220px;transform:translateX(-50%);background:#9b8cff22;border-radius:50%;filter:blur(10px)}.contact-box>*{position:relative}.contact-box .desc{margin:auto}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.78rem}.foot{display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(16px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){.hero-grid,.about{grid-template-columns:1fr}.code-card{display:none}.skills{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.projects{grid-template-columns:1fr}.nav{display:none}.hamb{display:block}.nav.open{display:flex;position:absolute;top:74px;right:4%;flex-direction:column;padding:18px;background:#0d1118;border:1px solid var(--line);border-radius:16px}}
+@media(max-width:560px){.skills{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{border-right:0!important;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.job{grid-template-columns:1fr;gap:5px}.foot{flex-direction:column}h1{font-size:3.45rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#inicio">ENRIQUE<span>.</span></a>
+<div class="nav" id="nav"><a href="#sobre">Sobre</a><a href="#skills">Stack</a><a href="#projetos">Projetos</a><a href="#trajetoria">Trajetória</a><a href="#contato" class="nav-cta">Contato</a></div>
+<button class="hamb" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav></div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="wrap hero-grid">
+<div class="reveal">
+<div class="eyebrow"><span class="dot"></span> Disponível para oportunidade em TI</div>
+<h1>Olá, eu sou<br><span class="gradient">Enrique.</span></h1>
+<p>Estudante de Gestão da Tecnologia da Informação, construindo minha carreira em <b>QA, desenvolvimento e suporte</b>. Este espaço reúne minha trajetória, meus projetos e aquilo que estou aprendendo na prática.</p>
+<div class="actions"><a class="btn primary" href="#projetos">Explorar projetos</a><a class="btn" href="curriculo.html">Ver currículo ↗</a><a class="btn" href="https://github.com/" target="_blank">GitHub ↗</a></div>
+</div>
+<div class="code-card reveal"><div class="dots"><b></b><b></b><b></b></div><div class="code"><span class="kw">const</span> developer = {<br>&nbsp;&nbsp;name: <span class="str">"Enrique"</span>,<br>&nbsp;&nbsp;degree: <span class="str">"GTI"</span>,<br>&nbsp;&nbsp;focus: [<span class="str">"QA"</span>, <span class="str">"Dev"</span>],<br>&nbsp;&nbsp;mindset: <span class="str">"learn → build"</span>,<br>&nbsp;&nbsp;coffee: <span class="kw">true</span><br>};<br><br><span class="cm">// next step: production 🚀</span></div></div>
+</div></section>
+
+<section><div class="wrap reveal"><div class="stats"><div class="stat"><strong>4º</strong><span>semestre de GTI</span></div><div class="stat"><strong>B2</strong><span>inglês</span></div><div class="stat"><strong>01+</strong><span>projeto de produto digital</span></div><div class="stat"><strong>∞</strong><span>curiosidade para aprender</span></div></div></div></section>
+
+<section id="sobre"><div class="wrap reveal"><div class="section-head"><div><div class="section-kicker">01 / Sobre</div><h2 class="title">Aprender é parte do trabalho.</h2></div><p class="desc">Meu objetivo é transformar estudo em experiência prática e construir uma carreira sólida em tecnologia.</p></div>
+<div class="about"><article class="panel"><h3>Quem sou</h3><p>Sou estudante de Gestão da Tecnologia da Informação, com perfil autodidata e interesse por sistemas, desenvolvimento e resolução de problemas. Gosto de entender o “porquê” das coisas e testar caminhos até encontrar uma solução.</p><p>Estou buscando minha primeira oportunidade profissional em TI para aplicar o que venho estudando, aprender com uma equipe e evoluir tecnicamente.</p></article>
+<article class="panel"><h3>Onde quero chegar</h3><p>Tenho interesse especial em QA e testes de software, sem limitar minha evolução a uma única área. Também estudo desenvolvimento, banco de dados, Linux e fundamentos de gestão de TI.</p><div class="tags"><span class="tag">QA / Testes</span><span class="tag">SDET</span><span class="tag">Suporte</span><span class="tag">Desenvolvimento</span></div></article></div>
+</div></section>
+
+<section id="skills"><div class="wrap reveal"><div class="section-head"><div><div class="section-kicker">02 / Stack</div><h2 class="title">Ferramentas que estou construindo domínio.</h2></div></div>
+<div class="skills">
+<div class="skill"><div class="skill-top"><b>React Native</b><small>Dev</small></div><p>Aplicações mobile com Expo e componentes de interface.</p></div>
+<div class="skill"><div class="skill-top"><b>Firebase</b><small>Backend</small></div><p>Autenticação, Firestore e estrutura de dados para projetos.</p></div>
+<div class="skill"><div class="skill-top"><b>SQL</b><small>Dados</small></div><p>Fundamentos de bancos relacionais e consultas.</p></div>
+<div class="skill"><div class="skill-top"><b>Git / GitHub</b><small>Tools</small></div><p>Versionamento, organização de projetos e colaboração.</p></div>
+<div class="skill"><div class="skill-top"><b>Linux</b><small>Systems</small></div><p>Fundamentos de sistemas e ambiente de trabalho.</p></div>
+<div class="skill"><div class="skill-top"><b>QA</b><small>Quality</small></div><p>Casos de teste, cenários, investigação e documentação de problemas.</p></div>
+</div></div></section>
+
+<section id="projetos"><div class="wrap reveal"><div class="section-head"><div><div class="section-kicker">03 / Projetos</div><h2 class="title">Coisas que saíram da ideia.</h2></div></div>
+<div class="projects">
+<article class="panel project"><div class="num">PROJECT 01 · EDTECH</div><h3>NewEdu</h3><p>Plataforma educacional gamificada para preparação para provas e concursos. O conceito combina estudo, progressão e competição saudável através de XP, níveis e rankings.</p><div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">Firebase</span><span class="tag">Firestore</span><span class="tag">Figma</span></div><div class="actions"><a class="btn" href="https://github.com/" target="_blank">Ver no GitHub ↗</a></div></article>
+<article class="panel project"><div class="num">PROJECT 02 · QA</div><h3>QA Lab</h3><p>Área dedicada a estudos práticos de qualidade de software, com cenários, casos de teste, testes negativos, relatórios de bugs e documentação.</p><div class="tags"><span class="tag">Test Cases</span><span class="tag">Bug Reports</span><span class="tag">Exploratory Testing</span></div><div class="actions"><a class="btn" href="mailto:seuemail@email.com">Em construção</a></div></article>
+</div></div></section>
+
+<section id="trajetoria"><div class="wrap reveal"><div class="section-head"><div><div class="section-kicker">04 / Trajetória</div><h2 class="title">De onde venho. Para onde vou.</h2></div></div>
+<div class="panel timeline">
+<div class="job"><time>2026 · atual</time><div><h3>Gestão da Tecnologia da Informação</h3><p>4º semestre · [Nome da instituição]</p></div></div>
+<div class="job"><time>Experiência</time><div><h3>Mavsa Resort · Recreacionista</h3><p>Organização, atendimento, trabalho em equipe, resolução de problemas e cumprimento de procedimentos.</p></div></div>
+<div class="job"><time>Anterior</time><div><h3>Experiências administrativas e operacionais</h3><p>Organização de informações, documentos, processos e utilização de ferramentas digitais.</p></div></div>
+</div></div></section>
+
+<section id="contato" class="contact"><div class="wrap reveal"><div class="contact-box"><div class="section-kicker">05 / Contato</div><h2 class="title">Vamos construir o próximo passo?</h2><p class="desc">Estou aberto a oportunidades de entrada em TI e a projetos que me permitam aprender, contribuir e evoluir.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="mailto:seuemail@email.com">Enviar e-mail</a><a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a><a class="btn" href="https://github.com/" target="_blank">GitHub ↗</a></div></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 Enrique Artur Rodrigues Santos</span><span>Feito com HTML, CSS e JavaScript.</span></div></footer>
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+</script>
+</body>
+</html>
